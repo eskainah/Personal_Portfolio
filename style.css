@@ -17,6 +17,7 @@ body{
 .row{
     padding: 10px;
     display: flex;
+    
 }
 .nav {
     width: 100%;
@@ -108,7 +109,7 @@ body{
     position: relative;
 } 
 .logo{
-    margin:.17em 0 0 1.3em;
+   margin:.17em 0 0 1.3em;
     font-size: calc(18px + 0.390625vw);
     font-weight: 600;
     text-decoration: none;
