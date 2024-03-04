@@ -114,3 +114,15 @@ body{
     text-decoration: none;
     color: #FFF;
 }
+.hero__text{
+    h1{
+        color: #ffffffda;
+    }
+    p{
+        color: rgb(161, 159, 159);
+    }
+}
+.hero_img{
+    width: 100%;
+    border-radius: 60%;
+}
