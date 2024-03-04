@@ -108,8 +108,8 @@ body{
     position: relative;
 } 
 .logo{
-    margin:.2em 0 0 1.5em;
-    font-size: calc(16px + 0.390625vw);
+    margin:.17em 0 0 1.3em;
+    font-size: calc(18px + 0.390625vw);
     font-weight: 600;
     text-decoration: none;
     color: #FFF;
@@ -117,12 +117,15 @@ body{
 .hero__text{
     h1{
         color: #ffffffda;
+        font-size: calc(24px + 0.390625vw);
     }
     p{
         color: rgb(161, 159, 159);
+        font-size: calc(17px + 0.390625vw);
     }
 }
 .hero_img{
+    margin-top: 15px;
     width: 100%;
     border-radius: 60%;
 }
