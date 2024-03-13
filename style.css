@@ -5,23 +5,25 @@ body{
     background-color: #070707;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    
 }
 .container {
     width: 94%;
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid white;
-    /* added for nav-toggle positioning */
     position: relative;
 }
-.row{
-    padding: 10px;
-    display: flex;
-    
+header {
+    padding: 1em 0;
+    border: 2px solid blanchedalmond;
 }
 .nav {
     width: 100%;
     font-size: 1rem;
+    
+    padding: 10px;
+    
 }
 .nav__list{
     list-style: none;
@@ -52,7 +54,7 @@ body{
     width: 3em;
     height: 2em;
     padding: 0;
-    background-color: transparent;
+    background-color: #070707;
     color: white;
     transition: opacity 250ms ease;
     
@@ -92,11 +94,6 @@ body{
 .hamburger::after {
     transform: translateY(3px);
 }
-
-/* made changes here from video
-   to make it more accessible.
-   
-   Works the same :) */
 .nav {
     visibility: hidden;
     height: 0;
@@ -109,7 +106,7 @@ body{
     position: relative;
 } 
 .logo{
-   margin:.17em 0 0 1.3em;
+    margin-left: 40px;
     font-size: calc(18px + 0.390625vw);
     font-weight: 600;
     text-decoration: none;
