@@ -1,7 +1,15 @@
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
+const toggleButton = document.querySelector('.toggle-button');
+const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.nav__link');
+let menuOpen = false;
 
+toggleButton.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  menu.classList.toggle('active', menuOpen);
+  });
 
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav--visible');
-})
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+});
