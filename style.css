@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #000000;
+    background-color: #000100;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
+    padding: 0;
 }
 
 .container {
@@ -19,10 +20,11 @@ body{
     flex-direction: row;
     align-items: center;
     column-gap: 10px;
-    padding: 1rem 0.5rem 0.5rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(112, 109, 109);
 }
 
- .toggle-button {
+.toggle-button {
     cursor: pointer;
     border: 0;
     width: 3.5em;
@@ -68,7 +70,6 @@ body{
 }
 
 .logo{
-    /* margin-left: 40px; */
     font-size: calc(24px + 0.390625vw);
     font-weight: 600;
     text-decoration: none;
@@ -113,16 +114,17 @@ body{
 .nav__link:focus{
     background-color: #000000;
     color: #ffffffda;
-    
 }
 
 .hero__text{
     h1{
-        color: #e0e0e0;
+        color: #ffffff;
         font-size: calc(28px + 0.390625vw);
+        margin: 0;
+        padding-top: 20px;
     }
     p{
-        color: rgb(116, 116, 116);
+        color: rgb(255, 254, 254);
         font-size: calc(20px + 0.390625vw);
     }
 }
@@ -130,20 +132,13 @@ body{
 .hero_img{
     margin-top: 1.5rem;
     width: 100%;
-     /* background-image: url(img/profile.jpeg);
-     border-radius: 200px;
-     border: 20px solid #b6b3b3; */
-    height: 400px;
-  img{
-    height: 100%;
-    width: 100%;
     border-radius: 200px;
-    border: 20px solid #00000086;
-  }
-   
+    height: 400px;
+   img{
+    width: 100%;
+   }
 }
 .row{
-   
     margin: 2rem auto;
     display: flex;
     justify-content: space-evenly;
@@ -154,15 +149,13 @@ body{
     font-weight: 500;
     padding: 10px;
     width: 8rem;
-    border: none;
-    
+    border: none;  
 }
 .btn:nth-child(1){
     background-color: #1b8b4a;
     color: #FFF;
 }
 .btn:nth-child(1):hover{
-    
     opacity: .7;
 }
 .btn:nth-child(2){
