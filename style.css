@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #070707;
+    background-color: #000000;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
@@ -130,7 +130,11 @@ body{
 .hero_img{
     margin-top: 1.5rem;
     width: 100%;
-    border-radius: 0 0 100% 100%;
+    background-image: url(img/PROFILE.png);
+    border-radius: 200px;
+    border: 20px solid #050505e8;
+    height: 400px;
+   background-position: center;
 }
 .row{
    
