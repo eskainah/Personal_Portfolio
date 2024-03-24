@@ -11,6 +11,10 @@ body{
     font-style: normal;
     padding: 0;
 }
+h2{
+    color: #E1E1E1;
+    font-size: calc(20px + 0.390625vw);
+}
 
 .container {
     width: 90%;
@@ -177,16 +181,17 @@ body{
     color: #E1E1E1;
     font-size: calc(16px + 0.390625vw);
 }
-h2{
-    color: #E1E1E1;
-    font-size: calc(20px + 0.390625vw);
+.socials{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
 }
-/* .card{
-    background-color: rgb(255, 254, 254);
-    font-size: calc(12px + 0.1vw);
-    margin: 10px 0;
-} 
- */
+.socials a img{
+    width: 50px;
+    height: 50px;
+}
+
 .cards-holder {
     display: flex;
     flex-direction: row;
