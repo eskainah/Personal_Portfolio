@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,10 +58,135 @@
                 <div></div>
                 <div></div>
             </div>
-           
         </section>
         
     </main>
 
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*    --dark-black: #121212;
+    --dark--home-03: #242022;
+    --black: #313131; */
+        * {
+            box-sizing: border-box;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            background-color: teal;
+            height: 80vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 0px;
+            margin: 4px;
+            gap: 8px;
+            max-width: 388px;
+            max-height: 430px;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            transition: all 0.2s;
+        }
+
+
+        .card {
+            padding: 4px;
+            min-width: 388px;
+            min-height: 300px;
+            display: flex;
+            background-color: white;
+            border: 2px solid brown;
+            border-radius: 8px;
+            scroll-snap-align: start;
+            transition: all 0.2s;
+
+        }
+
+        .card div {
+            background-color: rgb(255, 60, 0);
+            width: 100%;
+            object-fit: contain;
+            cursor: move;
+            cursor: grab;
+        }
+
+        .card div:active {
+            cursor: grabbing;
+        }
+
+        .container::-webkit-scrollbar {
+
+            display: none;
+            /*  width: 8px; */
+        }
+
+        /* .container::-webkit-scrollbar-track{
+            background-color: white;
+            border-radius: 8px;
+        }
+        .container::-webkit-scrollbar-thumb{
+            background-color: rgb(31, 161, 60);
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <section class="container">
+            <div class="card">
+                <div>
+                    One
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div>
+                    two
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    const slider = document.querySelector('.container');
+    let isDown = false;
+    let startX, scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+    })
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2;
+
+        slider.scrollLeft = scrollLeft - walk;
+    })
+</script>
+
 </html>
