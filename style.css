@@ -275,7 +275,6 @@ main{
     margin-top: 50px;
     h2{
         text-align: center;
-        font-size: calc(24px + 0.390625vw);
     }
     h3{
         color: #c4c4c4;
@@ -283,7 +282,7 @@ main{
     }
 }
 .input_field{
-    font-size: calc(18px + 0.390625vw);
+    font-size: calc(16px + 0.390625vw);
     width: 100%;
     color: #838080;
     transition: all 0.2s;
@@ -297,13 +296,13 @@ main{
     border: 3px solid gray;
     background-color: transparent;
     color: #dbd6d6;
-    font-size: calc(18px + 0.390625vw);
+    font-size: calc(16px + 0.390625vw);
 }
 .msg_box:active{
     border: none;
 }
 .input_label{
-    font-size: calc(18px + 0.390625vw);
+    font-size: calc(16px + 0.390625vw);
     color: #838080;
 }
 .input_frm div{
