@@ -28,7 +28,7 @@ h2{
     align-items: center;
     column-gap: 10px;
     padding: 1rem 0;
-    background-color: rgb(36, 35, 35);;
+    background-color: rgba(82, 78, 78, 0.13);;
 }
 
 .toggle-button {
@@ -254,6 +254,7 @@ main{
 .skills-card{
     background-color: #141414f8;
     padding: 15px 0 ;
+    box-shadow: 0px 2px 8px 2px #141414f8;
     div{
         padding: 15px 0;
     }
@@ -261,7 +262,7 @@ main{
 .skills-card p{
     text-align: center;
     font-size: calc(60px + 0.390625vw);
-    color: #9c9999;
+    color: #838080;
     margin: 0;
 }
 .skills-card h2{
@@ -269,4 +270,44 @@ main{
     text-align: center;
     font-size: calc(26px + 0.390625vw);
     color: #1b8b4a;
+}
+.footer{
+    h2{
+        text-align: center;
+        font-size: calc(30px + 0.390625vw);
+    }
+    h3{
+        color: #c4c4c4;
+        text-align: center;
+    }
+}
+.input_field{
+    font-size: calc(24px + 0.390625vw);
+    width: 100%;
+    color: #838080;
+    transition: all 0.2s;
+    margin-top: -5px;
+    border: none;
+    border-bottom: 3px solid gray;
+    background-color: transparent;
+}
+.msg_box{
+    margin-top: 8px;
+    border: 3px solid gray;
+    background-color: transparent;
+}
+.msg_box:active{
+    border: none;
+}
+.input_label{
+    font-size: calc(24px + 0.390625vw);
+    color: #838080;
+}
+.input_frm div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.input_frm .btn{
+    width: 100%;
 }
