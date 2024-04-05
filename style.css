@@ -197,7 +197,7 @@ main {
     flex-direction: column;
 }
 
-.about p {
+.para_text {
     color: #E1E1E1;
     font-size: calc(16px + 0.390625vw);
 }
@@ -350,6 +350,68 @@ main {
 
 .input_frm .btn {
     width: 100%;
+}
+
+
+/* Resume Design */
+.profile{
+    margin-top: 68px;
+    
+}
+.profile_img{
+    width: 100%;
+   img{
+    width: 100%;
+    
+   }
+}
+.intro{
+    position: relative;
+   top: -119px;
+   background-color: #201f1ec5;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   h1{
+    padding-top: 5px;
+   }
+    p{
+    margin-top: 0;
+    padding: 0;
+}
+}
+.profile_summary{
+    margin-top: -120px;
+    background-color: #ffffff;
+    padding-top: 50px;
+    p{
+        color: #000000;
+        font-size: 16px;
+    }
+}
+.info{
+    background-color: #ffffff;
+}
+.education{
+    margin-top: 30px;
+    div p:nth-child(3){
+        font-weight: bold;
+        color: #2baa62;
+    }
+    div{
+        margin-bottom: 20px;
+    }
+    div p{
+        font-size: 18px;
+        margin: 0;
+    }
+    div h2{
+        color: #080808f6;
+        margin: 0;
+        font-size: 18px;
+    }
+    h2{
+        color: rgb(15, 8, 3);
+    }
 }
 
 @media (min-width: 900px) {
