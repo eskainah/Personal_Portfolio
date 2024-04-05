@@ -392,6 +392,9 @@ main {
 }
 .info{
     background-color: #ffffff;
+    h2{
+        color: rgb(15, 8, 3);
+    }
 }
 .education{
     margin-top: 30px;
@@ -416,6 +419,59 @@ main {
     }
 }
 
+.tools{
+    margin-top: 10px;
+    
+    div h2{
+        color: #080808f6;
+        margin: 0;
+        font-size: 18px;
+    }
+    div{
+        margin-bottom: 30px;
+    }
+}
+.bar{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #0e0e0e86;
+    border: none;
+    div{
+    width: 90%;
+    padding: 3px;
+    background-color: #2baa62;
+    border: none;
+    margin: 0;
+    }
+}
+.work-lists{
+    margin-top: 20px;
+    background-color: #a79d9d11;
+    p{
+        font-size: 18px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}
+.lists{
+    margin-top: 30px;
+}
+.lists :nth-child(1){
+    margin-bottom: 0;
+    color: #535151;
+}
+.lists :nth-child(2){
+    margin: 0;
+    font-size: 20px;
+}
+.lists :nth-child(3){
+    margin-top: 0;
+}
+.footer-name{
+    margin-top: 20px;
+    text-align: center;
+}
 @media (min-width: 900px) {
     body {
         margin: 0 auto;
