@@ -169,6 +169,8 @@ h2 {
     padding: 10px;
     width: 9.8rem;
     border: none;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn:nth-child(1) {
